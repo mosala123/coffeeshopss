@@ -24,7 +24,9 @@ shop.classList.remove("show-shoping")
 // searching
 const searching= document.getElementById("searching")
 const search =document.querySelector(".search")
-const search_close=document.querySelector(".search-close")
+const search_close=document.querySelector(".search-close");
+
+
  searching.onclick=function(){
     console.log("momoS")
   search.classList.add("search-hiden")
@@ -34,21 +36,44 @@ search_close.onclick=function(){
   search.classList.remove("search-hiden")
 
 }
-// bar/
- let bar = document.getElementById("bar");
- let closeBar = document.querySelector(".close-bar");
- let navbar = document.querySelector(".navbar");
 
+//  nav bar 
+const navBar= document.querySelector(".navbar");
+const closeBar= document.querySelector(".close-bar");
+const bar= document.getElementById("bar");
+const header= document.getElementById("header");
 
-bar.onclick=function(){
-  console.log('j')
-   navbar.classList.add("showbar")
+bar.onclick= function(){
+console.log("jh")
+
+navBar.classList.toggle("navbarshow")
+  
 }
 
-closeBar.onclick= function(){
-  navbar.classList.remove("showbar")
 
-}
+
+
+
+
+
+
+closeBar.onclick=function(){
+
+
+  console.log("mid")
+navBar.classList.remove("navbarshow")
+
+} 
+
+
+
+
+
+
+
+
+
+
 
 
 
